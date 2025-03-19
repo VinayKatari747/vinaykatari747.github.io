@@ -1,72 +1,119 @@
-body {
+/* Reset and Base styles */
+* {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
     color: #333;
-    background: #f9f9f9;
-}
-
-header {
-    text-align: center;
-    margin: 40px 0 10px;
-}
-
-header h1 {
-    font-size: 2.5em;
-    margin: 0;
-}
-
-header p {
-    font-size: 1.1em;
-    color: #555;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 40px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #444;
-    font-weight: 500;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-main {
-    width: 60%;
-    margin: 0 auto;
-}
-
-section {
-    margin-bottom: 50px;
-}
-
-h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    font-weight: 600;
-}
-
-p, ul li {
-    font-size: 1em;
     line-height: 1.6;
 }
 
-ul {
-    list-style: disc inside;
-    padding: 0;
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 20px 10px;
+    background: #ffffff;
 }
 
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #222;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Navigation */
+nav {
+    text-align: center;
+    background: #ffffff;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #0077b6;
+}
+
+/* Main Content */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Section headings */
+h2 {
+    color: #111;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #0077b6;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* List styling */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #0077b6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Contact section */
+#contact {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#contact p {
+    margin-bottom: 8px;
+}
+
+#contact a {
+    margin: 0 10px;
+    color: #444;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#contact a:hover {
+    color: #0077b6;
+}
+
+/* Footer */
 footer {
     text-align: center;
-    padding: 20px 0;
-    font-size: 0.95em;
-    color: #555;
+    padding: 15px 0;
+    background: #ffffff;
     border-top: 1px solid #ddd;
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 20px;
 }
